@@ -59,14 +59,14 @@ RUN apt-get update && \
 #COPY . .
 
 # Build the project and run tests
-#RUN mvn clean compile
+RUN mvn clean compile
 
 # Run tests using TestNG when the container launches
-#CMD ["mvn", "test"]
+CMD ["mvn", "test"]
 
 
 
-#docker run -it d9dca95f0b74 mvn clean test -DsuiteFile=docker -Denv=qa
+#docker run -it ebfa4404e558 mvn clean test -DsuiteFile=docker -Denv=staging
 
 
 

@@ -247,7 +247,7 @@ public class ReadConfig {
     }
 
     public String getDcAppUrl() {
-        return pro != null ? pro.getProperty("baseCommerceCloudAppUrl") : System.getProperty("baseCommerceCloudAppUrl");
+        return pro != null ? pro.getProperty("baseURL") : System.getProperty("baseURL");
     }
 
     public String getInsightsEnvironment() {
