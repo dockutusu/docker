@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="API TESTS" parallel="tests" thread-count="3">
+
+
+    <test name="DockerTest">
+        <classes>
+            <class name="com.DC.apitests.adc.catalog.search.ShareOfVoice.BrandApiTest"/>
+        </classes>
+    </test>
+
+</suite>
