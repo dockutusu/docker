@@ -66,7 +66,7 @@ CMD ["mvn", "test"]
 
 
 
-#docker run -it ebfa4404e558 mvn clean test -DsuiteFile=docker -Denv=staging
+#docker run -it ea7463f49f60 mvn clean test -DsuiteFile=docker -Denv=qa
 
 
 

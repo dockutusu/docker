@@ -17,6 +17,7 @@ public class BrandApiTest extends BaseClass {
 
         System.out.println("********************* " + ReadConfig.getInstance().getDcAppUrl() + " *********************");
         String token = "Bearer";
+        Thread.sleep(7000);
         Assert.assertTrue(token.startsWith("doc"), "Token is not correct");
 
     }
@@ -25,6 +26,7 @@ public class BrandApiTest extends BaseClass {
     public void Share_Of_Voice_Brand_Api_Test() throws Exception {
 
         String token = "Bearer";
+        Thread.sleep(7000);
         Assert.assertTrue(token.contains("Bearer"));
 
     }
@@ -33,6 +35,7 @@ public class BrandApiTest extends BaseClass {
     public void Share_Of_Brand_Amazon_Api_Test() throws Exception {
 
         String token = "Bearer";
+        Thread.sleep(7000);
         Assert.assertTrue(token.startsWith("abc"), "Token failure");
 
     }
@@ -41,6 +44,7 @@ public class BrandApiTest extends BaseClass {
     public void Share_Voice_Brand_Amazon_Api_Test() throws Exception {
 
         String token = "Bearer";
+        Thread.sleep(7000);
         Assert.assertTrue(token.contains("Bear"));
 
     }
