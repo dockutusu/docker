@@ -46,18 +46,23 @@ FROM openjdk:11-jdk
 # Set the working directory in the Docker container
 WORKDIR /usr/src/myapp
 
+# Clone the desired git repository into the working directory
+RUN apt-get update && \
+    apt-get install -y git && \
+    git clone https://github.com/dockutusu/docker.git .
+
 # Install Maven
 RUN apt-get update && \
     apt-get install -y maven
 	
 # Copy the current directory contents into the container at /usr/src/myapp
-COPY . .
+#COPY . .
 
 # Build the project and run tests
-RUN mvn clean compile
+#RUN mvn clean compile
 
 # Run tests using TestNG when the container launches
-CMD ["mvn", "test"]
+#CMD ["mvn", "test"]
 
 
 

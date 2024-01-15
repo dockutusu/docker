@@ -16,8 +16,4 @@ debug.log
 /src/test/resources/environment/prod/*-attachment
 /.idea
 /Configuration
-/src/test/resources/environment/local/*.properties
-/src/test/resources/environment/development/*.properties
-/src/test/resources/environment/qa/*.properties
-/src/test/resources/environment/staging/*.properties
-/src/test/resources/environment/prod/*.properties
+
